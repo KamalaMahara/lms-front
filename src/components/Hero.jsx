@@ -9,9 +9,9 @@ export default function HeroComponent() {
       {/* Background/Right Graphic Container for Large Screens */}
       <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[52%] h-full hidden lg:block select-none pointer-events-none">
         <img
-          src="/hero1.jpg"
+          src="/hero1.png"
           alt="Japanese Landscape and Student Composition"
-          className="w-full h-full object-cover object-left-top"
+          className="w-full h-full object-fit  "
         />
       </div>
 
@@ -25,7 +25,7 @@ export default function HeroComponent() {
           <div className="inline-flex items-center space-x-2 bg-red-50/70 border border-red-100/50 px-4 py-1.5 rounded-full shadow-sm">
             <span className="text-base">🏆</span>
             <span className="text-sm font-semibold text-red-800 tracking-wide">
-              Trusted by 1,500+ Nepalese Learners
+              Nepal to Japan, We Bridge the Language gap
             </span>
           </div>
 

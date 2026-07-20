@@ -10,7 +10,7 @@ import {
 
 export default function MentorSection() {
   return (
-    <section className="bg-gray-50 py-24">
+    <section className="bg-[#F9F2EE] py-24">
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Heading */}

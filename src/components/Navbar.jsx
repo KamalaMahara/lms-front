@@ -95,27 +95,26 @@ export default function Navbar() {
 
       {/* ================= MAIN NAVBAR ================= */}
 
-      <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur-lg">
+      <header className="sticky top-0 z-50 border-b border-red-200 bg-[#F9F2EE]/95 backdrop-blur-lg shadow-sm rounded-b-2 transition-all duration-300">
 
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+        <div className="mx-auto flex h-20 max-w-7xl items-center gap-24 px-6 ">
 
           {/* Logo */}
 
-          <a href="#" className="flex items-center gap-3">
+          <a href="#" className="flex items-center gap-3 my-10">
 
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#BC002D] text-xl font-black text-white">
-              日
-            </div>
+            <img src="../public/navLogo1.png" className="h-22 mt-4" />
+
 
             <div>
 
-              <h1 className="text-2xl font-black tracking-tight">
+              <h1 className="text-3xl font-black tracking-tight">
                 <span className="text-[#1F1F1F]">Nihon </span>
                 <span className="text-[#BC002D]">Path</span>
               </h1>
 
-              <p className="-mt-1 text-xs text-gray-500">
-                Learn Japanese • Build Your Future
+              <p className="-mt-1 text-md text-gray-600 uppercase font-semibold">
+                Learn Japanese
               </p>
 
             </div>
@@ -130,7 +129,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="font-medium text-gray-700 transition hover:text-[#BC002D]"
+                className="font-semibold text-lg text-black transition hover:text-[#BC002D]"
               >
                 {link.name}
               </a>

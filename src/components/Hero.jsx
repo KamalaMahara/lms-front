@@ -4,28 +4,29 @@ import { BookOpen, GraduationCap, Headphones, Globe, ArrowRight, Calendar, Star 
 
 export default function HeroComponent() {
   return (
-    <section className="relative w-full min-h-screen bg-white overflow-hidden flex items-center justify-center font-sans">
+    <section className="relative w-full min-h-screen bg-[#F9F2EE] overflow-hidden flex items-center justify-center font-sans">
 
       {/* Background/Right Graphic Container for Large Screens */}
-      <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[52%] h-full hidden lg:block select-none pointer-events-none">
+      <div className="absolute right-0  top-0 bottom-0 w-full lg:w-[55%] h-full hidden lg:block select-none pointer-events-none">
         <img
           src="/hero1.png"
           alt="Japanese Landscape and Student Composition"
-          className="w-full h-full object-fit  "
+          className="w-full h-full object-contain "
         />
       </div>
 
       {/* Main Content Wrap */}
-      <div className="max-w-7xl w-full mx-auto px-6 py-12 md:py-20 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl w-full   py-8 md:py-20 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-centerm ">
 
         {/* Left Side: Content Form */}
-        <div className="lg:col-span-7 flex flex-col items-start space-y-8">
+        <div className="lg:col-span-7 flex flex-col items-start space-y-8 ">
 
           {/* Trust Badge */}
-          <div className="inline-flex items-center space-x-2 bg-red-50/70 border border-red-100/50 px-4 py-1.5 rounded-full shadow-sm">
-            <span className="text-base">🏆</span>
-            <span className="text-sm font-semibold text-red-800 tracking-wide">
-              Nepal to Japan, We Bridge the Language gap
+          <div className="inline-flex items-center space-x-2 bg-red-50/70 border border-red-100/50 px-4  rounded-full shadow-sm ">
+
+            <span className="text-sm font-semibold text-red-800 tracking-wide  ">
+
+              <img src='../public/download.gif' className=' flext object-fit ' />
             </span>
           </div>
 
@@ -45,51 +46,7 @@ export default function HeroComponent() {
           </p>
 
           {/* Feature Grid Card */}
-          <div className="w-full max-w-2xl bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100/80 p-5 md:p-6 grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {/* Feature 1 */}
-            <div className="flex items-center space-x-3">
-              <div className="p-2.5 bg-red-50 rounded-xl text-[#A72323] flex-shrink-0">
-                <BookOpen size={20} strokeWidth={2.5} />
-              </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-900 leading-tight">N5 to N1</h4>
-                <p className="text-xs text-slate-400 mt-0.5">All Levels</p>
-              </div>
-            </div>
 
-            {/* Feature 2 */}
-            <div className="flex items-center space-x-3">
-              <div className="p-2.5 bg-red-50 rounded-xl text-[#A72323] flex-shrink-0">
-                <GraduationCap size={20} strokeWidth={2.5} />
-              </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-900 leading-tight">N1 Level</h4>
-                <p className="text-xs text-slate-400 mt-0.5">Expert Teachers</p>
-              </div>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="flex items-center space-x-3">
-              <div className="p-2.5 bg-red-50 rounded-xl text-[#A72323] flex-shrink-0">
-                <Headphones size={20} strokeWidth={2.5} />
-              </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-900 leading-tight">Career</h4>
-                <p className="text-xs text-slate-400 mt-0.5">Counseling</p>
-              </div>
-            </div>
-
-            {/* Feature 4 */}
-            <div className="flex items-center space-x-3">
-              <div className="p-2.5 bg-red-50 rounded-xl text-[#A72323] flex-shrink-0">
-                <Globe size={20} strokeWidth={2.5} />
-              </div>
-              <div>
-                <h4 className="text-sm font-bold text-slate-900 leading-tight">Learn From</h4>
-                <p className="text-xs text-slate-400 mt-0.5">Anywhere</p>
-              </div>
-            </div>
-          </div>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">

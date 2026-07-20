@@ -25,7 +25,7 @@ export default function PaymentMethods() {
   ];
 
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-[#F9F2EE] py-20">
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Heading */}

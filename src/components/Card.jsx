@@ -50,42 +50,7 @@ export default function CourseCard() {
 
         {/* Course Info */}
 
-        <div className="grid grid-cols-2 gap-4 text-sm">
 
-          <div className="flex items-center gap-2 text-gray-600">
-            <Clock3
-              size={18}
-              className="text-[#BC002D]"
-            />
-            3 Months
-          </div>
-
-          <div className="flex items-center gap-2 text-gray-600">
-            <MonitorPlay
-              size={18}
-              className="text-[#BC002D]"
-            />
-            Live Online
-          </div>
-
-          <div className="flex items-center gap-2 text-gray-600">
-            <Users
-              size={18}
-              className="text-[#BC002D]"
-            />
-            350+ Students
-          </div>
-
-          <div className="flex items-center gap-2 text-gray-600">
-            <Star
-              size={18}
-              fill="#FACC15"
-              className="text-yellow-400"
-            />
-            4.9 Rating
-          </div>
-
-        </div>
 
         {/* Price */}
 

@@ -113,7 +113,7 @@ export default function Navbar() {
                 <span className="text-[#BC002D]">Path</span>
               </h1>
 
-              <p className="-mt-1 text-md text-gray-600 uppercase font-semibold">
+              <p className="-mt-1 text-md text-gray-600 uppercase font-semibold sm: display-none">
                 Learn Japanese
               </p>
 

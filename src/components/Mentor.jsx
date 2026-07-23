@@ -48,9 +48,9 @@ export default function MentorSection() {
             <div className="absolute h-80 w-80 rounded-full bg-[#BC002D]/10 blur-3xl"></div>
 
             <img
-              src="/mentor.png"
+              src="https://i.pinimg.com/1200x/b9/16/58/b916589615fa33f871b765dbfbcaa936.jpg"
               alt="Japanese Mentor"
-              className="relative z-10 w-full max-w-md rounded-3xl object-cover shadow-2xl"
+              className="relative z-10 w-full max-w-md rounded-3xl object- shadow-2xl"
             />
 
           </div>

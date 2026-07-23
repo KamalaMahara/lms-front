@@ -5,11 +5,12 @@ import {
   Clock3,
   Send,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
     <section className="bg-[#F9F2EE] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
 
         {/* Heading */}
 
@@ -34,11 +35,11 @@ export default function ContactSection() {
 
         {/* Main Content */}
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-2">
+        <div className="mt-16 grid gap-10 lg:grid-cols-2 items-start">
 
           {/* Left Side */}
 
-          <div className="rounded-3xl bg-[#BC002D] p-10 text-white">
+          <div className="rounded-2xl bg-[#BC002D] p-10 text-white">
 
             <h3 className="text-3xl font-bold">
               Get In Touch
@@ -64,7 +65,7 @@ export default function ContactSection() {
                   </h4>
 
                   <p className="mt-1 text-red-100">
-                    +977 98XXXXXXXX
+                    +977 9867452310
                   </p>
 
                 </div>
@@ -94,50 +95,31 @@ export default function ContactSection() {
               <div className="flex items-start gap-4">
 
                 <div className="rounded-xl bg-white/10 p-3">
-                  <MapPin size={22} />
+                  <FaWhatsapp size={22} />
                 </div>
 
                 <div>
 
                   <h4 className="font-semibold">
-                    Office
+                    Whatsapp
                   </h4>
 
                   <p className="mt-1 text-red-100">
-                    Kathmandu, Nepal
+                    9876543210
                   </p>
 
                 </div>
 
               </div>
 
-              <div className="flex items-start gap-4">
 
-                <div className="rounded-xl bg-white/10 p-3">
-                  <Clock3 size={22} />
-                </div>
-
-                <div>
-
-                  <h4 className="font-semibold">
-                    Office Hours
-                  </h4>
-
-                  <p className="mt-1 text-red-100">
-                    Sunday – Friday
-                  </p>
-
-                  <p className="text-red-100">
-                    8:00 AM – 6:00 PM
-                  </p>
-
-                </div>
-
-              </div>
 
             </div>
 
+
+
           </div>
+
 
           {/* Right Side */}
 

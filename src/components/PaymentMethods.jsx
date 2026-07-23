@@ -4,29 +4,23 @@ export default function PaymentMethods() {
   const payments = [
     {
       name: "eSewa",
-      logo: "/payments/esewa.png",
+      logo: "https://i.pinimg.com/736x/0e/83/5e/0e835e72d6cd124a1044aa7fb06c862a.jpg",
     },
     {
       name: "Khalti",
-      logo: "/payments/khalti.png",
+      logo: "https://blog.khalti.com/wp-content/uploads/2017/11/favicon-e1509629244768.png",
     },
     {
       name: "Fonepay",
-      logo: "/payments/fonepay.png",
+      logo: "https://fonepay.com/images/logos/fonepay.png",
     },
-    {
-      name: "Stripe",
-      logo: "/payments/stripe.png",
-    },
-    {
-      name: "PayPal",
-      logo: "/payments/paypal.png",
-    },
+
+
   ];
 
   return (
     <section className="bg-[#F9F2EE] py-20">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
 
         {/* Heading */}
 
@@ -53,7 +47,7 @@ export default function PaymentMethods() {
 
         {/* Payment Cards */}
 
-        <div className="mt-14 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-14 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-3">
 
           {payments.map((payment) => (
             <div
@@ -64,7 +58,7 @@ export default function PaymentMethods() {
               <img
                 src={payment.logo}
                 alt={payment.name}
-                className="h-12 object-contain transition duration-300 group-hover:scale-110"
+                className="h-18 object-contain transition duration-300 group-hover:scale-110"
               />
 
               <p className="mt-4 font-semibold text-gray-700">

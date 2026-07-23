@@ -26,7 +26,7 @@ export default function HeroComponent() {
 
             <span className="text-sm font-semibold text-red-800 tracking-wide  ">
 
-              <img src='../public/download.gif' className=' flext object-fit ' />
+              <img src='../download.gif' className=' flext object-fit ' />
             </span>
           </div>
 
@@ -69,17 +69,36 @@ export default function HeroComponent() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4">
             {/* Avatar Stack Placeholder boxes */}
             <div className="flex -space-x-3.5">
-              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden bg-slate-200">
-                <div className="w-full h-full bg-slate-400" />
+              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden">
+                <img
+                  src="https://i.pinimg.com/1200x/33/b2/41/33b241ae56c0a480e84ca08e200eddcc.jpg"
+                  alt="Student"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden bg-slate-200">
-                <div className="w-full h-full bg-slate-500" />
+
+              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden">
+                <img
+                  src="https://i.pinimg.com/1200x/c5/3e/63/c53e6398557160b6edf5bd641cad52de.jpg"
+                  alt="Student"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden bg-slate-200">
-                <div className="w-full h-full bg-slate-400" />
+
+              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden">
+                <img
+                  src="https://i.pinimg.com/736x/d8/ad/99/d8ad9924113c326472a8bb2190391427.jpg"
+                  alt="Student"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden bg-slate-200">
-                <div className="w-full h-full bg-slate-500" />
+
+              <div className="w-11 h-11 rounded-full border-2 border-white overflow-hidden">
+                <img
+                  src="https://i.pinimg.com/736x/c1/bc/63/c1bc6342198054dc3e6697b162afd6a8.jpg"
+                  alt="Student"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

@@ -103,7 +103,7 @@ export default function Navbar() {
 
           <a href="#" className="flex items-center gap-3 my-10">
 
-            <img src="../public/navLogo1.png" className="h-22 mt-4" />
+            <img src="../navLogo1.png" className="h-22 mt-4" />
 
 
             <div>

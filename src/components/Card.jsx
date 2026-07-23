@@ -6,7 +6,7 @@ import {
   MonitorPlay,
 } from "lucide-react";
 
-export default function CourseCard() {
+export default function CourseCard(prop) {
   return (
     <div className="group overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
 
@@ -15,15 +15,15 @@ export default function CourseCard() {
       <div className="relative overflow-hidden">
 
         <img
-          src="/course-n5.jpg"
+          src={prop.image}
           alt="JLPT N5 Course"
           className="h-60 w-full object-cover transition duration-500 group-hover:scale-105"
         />
 
         {/* Level Badge */}
 
-        <div className="absolute left-5 top-5 rounded-full bg-[#BC002D] px-4 py-1 text-sm font-semibold text-white shadow-lg">
-          JLPT N5
+        <div className="absolute left-5 top-5 rounded-full bg-black px-4 py-1 text-sm font-semibold text-white shadow-lg">
+          {prop.box}
         </div>
 
       </div>
@@ -37,13 +37,11 @@ export default function CourseCard() {
         <div>
 
           <h3 className="text-2xl font-bold text-gray-900">
-            Complete JLPT N5 Course
+            {prop.courseName}
           </h3>
 
-          <p className="mt-2 text-gray-500 leading-7">
-            Start your Japanese learning journey from scratch with
-            Hiragana, Katakana, basic grammar, vocabulary, speaking,
-            listening and exam preparation.
+          <p className="mt-2 text-gray-500 leading-7 line-clamp-2">
+            {prop.description}
           </p>
 
         </div>
@@ -59,12 +57,19 @@ export default function CourseCard() {
           <div>
 
             <p className="text-sm text-gray-500">
-              Starting From
+              Fee
             </p>
 
-            <h2 className="text-3xl font-black text-[#BC002D]">
-              Rs. 12,999
+            <h2 className="text-3xl font-black text-[#BC002D] ">
+              Rs {prop.fee}
             </h2>
+
+            <a
+              href="#"
+              className="text-md font-bold text-[#BC002D] hover:underline "
+            >
+              View Details →
+            </a>
 
           </div>
 
@@ -72,10 +77,8 @@ export default function CourseCard() {
 
             Enroll Now
 
-            <ArrowRight
-              size={18}
-              className="transition group-hover:translate-x-1"
-            />
+
+
 
           </button>
 

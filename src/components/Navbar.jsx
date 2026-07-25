@@ -12,16 +12,17 @@ import {
   FaYoutube as Youtube,
   FaTiktok as Tiktok,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "Courses", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Success Stories", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Home", to: "/" },
+    { name: "Courses", to: "/courses" },
+    { name: "About", to: "#" },
+    { name: "Success Stories", to: "#" },
+    { name: "Contact", to: "#" },
   ];
 
   return (
@@ -51,31 +52,30 @@ export default function Navbar() {
 
           <div className="flex items-center gap-8">
 
-            <a
-              href="#"
+            < Link
+              to="#"
               className="transition hover:text-[#BC002D] font-medium text-lg"
             >
               <Facebook size={20} />
-            </a>
+            </Link>
 
-            <a
-              href="#"
+            <Link to="#"
               className="transition hover:text-[#BC002D] font-medium text-lg"
             >
               <Instagram size={20} />
-            </a>
+            </Link>
 
-            <a
-              href="#"
+            <Link
+              to="#"
               className="transition hover:text-[#BC002D] font-medium text-lg"
             >
               <Youtube size={20} />
-            </a>
+            </Link>
 
             {/* TikTok SVG */}
 
-            <a
-              href="#"
+            <Link
+              to="#"
               className="transition hover:text-[#BC002D] font-medium text-lg"
             >
               <svg
@@ -86,7 +86,7 @@ export default function Navbar() {
               >
                 <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25h-3.13v12.4a2.71 2.71 0 11-2.71-2.71c.29 0 .57.04.83.13V9.1a5.86 5.86 0 00-.83-.06A5.87 5.87 0 1015.85 15V8.78a7.95 7.95 0 004.65 1.49V6.69h-.91z" />
               </svg>
-            </a>
+            </Link>
 
           </div>
 
@@ -101,38 +101,38 @@ export default function Navbar() {
 
           {/* Logo */}
 
-          <a href="#" className="flex items-center gap-3 my-10">
+          <Link to="/" className="flex items-center gap-3 my-10">
 
             <img src="../navLogo1.png" className="h-22 mt-4" />
 
 
             <div>
 
-              <h1 className="text-3xl font-black tracking-tight">
+              <h1 className="text-3xl font-black tracking-tight " >
                 <span className="text-[#1F1F1F]">Nihon </span>
                 <span className="text-[#BC002D]">Path</span>
               </h1>
 
-              <p className="-mt-1 text-md text-gray-600 uppercase font-semibold sm: display-none">
+              <p className="-mt-1 hidden text-md font-semibold uppercase text-gray-600 md:block ">
                 Learn Japanese
               </p>
 
             </div>
 
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
 
           <nav className="hidden lg:flex items-center gap-9">
 
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.to}
                 className="font-semibold text-lg text-black transition hover:text-[#BC002D]"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
 
           </nav>
@@ -140,10 +140,11 @@ export default function Navbar() {
           {/* Right */}
 
           <div className="hidden lg:flex items-center gap-4">
-
-            <button className="rounded-xl border border-[#BC002D] px-5 py-2.5 font-semibold text-[#BC002D] transition hover:bg-[#BC002D] hover:text-white">
-              Login
-            </button>
+            <Link to={"/login"}>
+              <button className="rounded-xl border border-[#BC002D] px-5 py-2.5 font-semibold text-[#BC002D] transition hover:bg-[#BC002D] hover:text-white">
+                Login
+              </button>
+            </Link>
 
             <button className="rounded-xl bg-gradient-to-r from-[#BC002D] to-[#D61F4D] px-6 py-2.5 font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl">
               Book Counseling
@@ -170,18 +171,19 @@ export default function Navbar() {
             <div className="space-y-2 px-6 py-6">
 
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
-                  className="block rounded-lg px-3 py-3 font-medium text-gray-700 hover:bg-gray-100"
+                  to={link.to}
+                  className="block rounded-lg px-3 py-3 font-medium text-gray-700 hover:bg-gray-100 text-[#BC002D]"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
-
-              <button className="mt-4 w-full rounded-xl border border-[#BC002D] py-3 font-semibold text-[#BC002D]">
-                Login
-              </button>
+              <Link to={"/login"}>
+                <button className="mt-4 w-full rounded-xl border border-[#BC002D] py-3 font-semibold text-[#BC002D]">
+                  Login
+                </button>
+              </Link>
 
               <button className="mt-3 w-full rounded-xl bg-gradient-to-r from-[#BC002D] to-[#D61F4D] py-3 font-semibold text-white">
                 Book Counseling

@@ -42,33 +42,33 @@ export default function Footer() {
 
             <div className="mt-8 flex gap-4">
 
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 transition hover:bg-[#BC002D]"
               >
                 <FaFacebookF size={18} />
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 transition hover:bg-[#BC002D]"
               >
                 <FaInstagram size={18} />
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 transition hover:bg-[#BC002D]"
               >
                 <FaLinkedinIn size={18} />
-              </a>
+              </Link>
 
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 transition hover:bg-[#BC002D]"
               >
                 <FaYoutube size={18} />
-              </a>
+              </Link>
 
             </div>
 
@@ -94,13 +94,13 @@ export default function Footer() {
               ].map((item) => (
                 <li key={item}>
 
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="flex items-center gap-2 text-gray-300 transition hover:text-white"
                   >
                     <ArrowUpRight size={15} />
                     {item}
-                  </a>
+                  </Link>
 
                 </li>
               ))}
@@ -129,13 +129,13 @@ export default function Footer() {
               ].map((course) => (
                 <li key={course}>
 
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="flex items-center gap-2 text-gray-300 transition hover:text-white"
                   >
                     <ArrowUpRight size={15} />
                     {course}
-                  </a>
+                  </Link>
 
                 </li>
               ))}
@@ -220,17 +220,17 @@ export default function Footer() {
 
           <div className="flex flex-wrap gap-6">
 
-            <a href="#" className="hover:text-white transition">
+            <Link to="#" className="hover:text-white transition">
               Privacy Policy
-            </a>
+            </Link>
 
-            <a href="#" className="hover:text-white transition">
+            <Link to="#" className="hover:text-white transition">
               Terms & Conditions
-            </a>
+            </Link>
 
-            <a href="#" className="hover:text-white transition">
+            <Link to="#" className="hover:text-white transition">
               Refund Policy
-            </a>
+            </Link>
 
           </div>
 

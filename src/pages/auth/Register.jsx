@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Register() {
   const navigate = useNavigate()
@@ -39,7 +39,7 @@ export default function Register() {
       }
       else console.log("something went wrong while  user registering")
     } catch (error) {
-      alert(error.response.data.message)
+      alert(error.response?.data?.message)
     }
 
   }
@@ -257,12 +257,14 @@ export default function Register() {
 
                 <p className="mt-8 text-center text-sm text-gray-500">
                   Already have an account?{" "}
-                  <button
-                    type="button"
-                    className="font-semibold text-[#BC002D] transition hover:underline"
-                  >
-                    Sign In
-                  </button>
+                  <Link to={"/login"}>
+                    <button
+                      type="button"
+                      className="font-semibold text-[#BC002D] transition hover:underline"
+                    >
+                      Sign In
+                    </button>
+                  </Link>
                 </p>
 
               </div>

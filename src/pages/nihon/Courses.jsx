@@ -1,6 +1,6 @@
 import React from 'react'
 import CourseCard from "../../components/Card";
-import Navbar from '../../components/Navbar';
+
 import Footer from '../../components/Footer';
 
 
@@ -60,7 +60,7 @@ const courses = [
 const Courses = () => {
   return (
     <>
-      <Navbar />
+
 
       <section className="bg-[#F9F2EE] py-24">
         <div className="mx-auto max-w-7xl px-6">
@@ -96,7 +96,7 @@ const Courses = () => {
 
         </div>
       </section>
-      <Footer />
+
     </>
   )
 }

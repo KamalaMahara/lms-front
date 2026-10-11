@@ -11,7 +11,7 @@ export default function HeroComponent() {
         <img
           src="/hero1.png"
           alt="Japanese Landscape and Student Composition"
-          className="w-full h-full object-contain "
+          className="w-full h-[800px] object-contain "
         />
       </div>
 
